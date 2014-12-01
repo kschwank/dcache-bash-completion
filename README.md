@@ -10,7 +10,7 @@ To use with bash simply copy the script to /etc/bash_completion.d/dcache
 
 zsh can use bash completion scripts with a little help:
 
-Add the following to you .zshrc:
+Add the following to your .zshrc:
 
     _have()
     {
