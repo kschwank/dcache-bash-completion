@@ -3,6 +3,7 @@ _dcache_domains()
   echo $(dcache status|egrep -o "^\w+"|tail -n +2)
 }
 
+have dcache &&
 _dcache()
 {
   local cur prev
@@ -59,6 +60,5 @@ _dcache()
     *)
         ;;
   esac
-}
-
+} &&
 complete -F _dcache dcache
